@@ -83,22 +83,22 @@ EvaExchange is an arbitrage trading game developed by a startup named “Super T
 
 ### Authentication
 
-- **POST** `/register` - Registers a new user. (Handled by `AuthController.register`)
-- **POST** `/login` - Logs in an existing user. (Handled by `AuthController.login`)
+- **POST** `api/auth/register` - Registers a new user. (Handled by `AuthController.register`)
+- **POST** `api/auth/login` - Logs in an existing user. (Handled by `AuthController.login`)
 
 ### Stocks
 
-- **GET** `/getAll` - Retrieves all registered stocks. (Handled by `StockController.getAll`)
+- **GET** `api/stocks/getAll` - Retrieves all registered stocks. (Handled by `StockController.getAll`)
 
 ### Transactions
 
-- **POST** `/buy/:stockId` - Executes a BUY transaction for a specified stock. (Handled by `TransactionController.buy`)
-- **POST** `/sell/:stockId` - Executes a SELL transaction for a specified stock. (Handled by `TransactionController.sell`)
+- **POST** `api/transactions/buy/:stockId` - Executes a BUY transaction for a specified stock. (Handled by `TransactionController.buy`)
+- **POST** `api/transactions/sell/:stockId` - Executes a SELL transaction for a specified stock. (Handled by `TransactionController.sell`)
 
 ### Users
 
-- **GET** `/getUserStocks` - Retrieves all stocks in the user's portfolio. (Handled by `UserController.getUserStocks`)
-- **PUT** `/updateBalance` - Updates the user's balance. (Handled by `UserController.updateBalance`)
+- **GET** `api/users/getUserStocks` - Retrieves all stocks in the user's portfolio. (Handled by `UserController.getUserStocks`)
+- **PUT** `api/users/updateBalance` - Updates the user's balance. (Handled by `UserController.updateBalance`)
 
 ## Testing
 
@@ -115,7 +115,7 @@ This project uses Sequelize as the ORM and can be initialized with bulk insert/u
 - **Node.js**
 - **Express**
 - **Sequelize ORM**
-- **PostgreSQL (or MySQL)**
+- **PostgreSQL**
 
 ## Conclusion
 
