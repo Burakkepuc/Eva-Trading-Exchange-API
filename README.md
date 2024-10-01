@@ -74,10 +74,11 @@ EvaExchange is an arbitrage trading game developed by a startup named “Super T
 
 ## Scripts
 
+- **`npm install`**: Install node packages.
 - **`npm run dev`**: Runs the application in development mode using `nodemon`.
-- **`npm run migrate`**: Executes database migrations using `sequelize`.
+- **`npm run migrate`**: Executes database migrations using `sequelize`.(Deletes everyting in db first be careful)
 - **`npm run seed`**: Seeds the database using `sequelize`(Deletes everyting in db first be careful).
-- **`npm run test`**: Runs the test suite using `jest`(Deletes everyting in db first be careful)..
+- **`npm run test`**: Runs the test suite using `jest`.
 
 ## API Endpoints
 
